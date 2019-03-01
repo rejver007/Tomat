@@ -1,0 +1,315 @@
+body{
+    font-family: Open Sans;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#background{
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;  
+}
+
+.container h2{
+    color: #e2dfde;
+    text-shadow: 4px 4px 14px #f06c38;
+    
+}
+#logotop{
+    width: 50%;
+    height: 50%;
+    padding-left: 25%;
+    padding-top:20px; 
+}
+.tomatos:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+#logotop:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+#tomato5:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.hide-on-mobile{
+    display: none;
+}
+
+blockquote{
+    color: #292a35;
+    font-size: .9em;
+    line-height: 1.6em;
+    padding-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h5{
+    font-size: 1.3em;
+    margin-bottom: -10px;
+    margin-top: 5px;
+}
+.container{
+    text-align: center;
+    padding: .8em 1.2em;
+}
+.hide-mobile{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-family: Arial;
+    color: #f06c38;
+    text-shadow: 4px 4px 18px black;
+}
+hr{
+    margin-bottom: 40px;
+}
+.menu{
+    width: 25px;
+    margin-top: 45%;
+    padding:10px;
+}
+h2{
+    text-align: center;
+    color: #f06c38;
+}
+h2 img{
+    width: 30px;
+    padding-left: 5px;
+}
+.subhead{
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    color: #faf4f4;
+    text-shadow: 2px 2px 14px rgb(14, 104, 238);
+    font-size: 1.3em;
+}
+#winy{
+    color: #d7f335;
+    letter-spacing: 1px;
+    opacity: .7;
+}
+.gray-container{
+    border-top: 2px solid black;
+    background: #f06c38;
+    padding: 4em 0 2em;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+figcaption{
+    font-weight: bold;
+    color: #00C2FF;
+    padding-bottom: 5px;
+}
+h2{
+    margin-top: 7%;
+}
+.footer-container{
+    width: 100%;
+    background: #3D444A;
+    color: #fff;
+    padding: 3em 0;
+}
+footer li a{
+    color: rgb(89, 247, 102);
+    text-decoration: none;
+}
+
+nav ul{
+    position: fixed;
+    width: 40%;
+    top: 0;
+    right:0;
+    text-align: left;
+    background: #f06c38;
+    height: 33%;
+    z-index: 7;
+    padding-top: 3em;
+   
+}
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55,59); 
+    
+}
+nav ul li a:hover{
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn{
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img{
+width: 15px;
+cursor: pointer;
+}
+footer img{
+    width: 40px;
+}
+div figure img{
+    width: 70%;
+}
+@media only screen and (min-width:650px){
+
+    #logotop{
+        width: 40%;
+        padding-left: 30%;
+    }
+    .subhead{
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (min-width:800px){
+    #logotop{
+        width: 35%;
+        padding-left: 33%
+    }
+    .tomatos{
+        width: 40%;
+    }
+    #winy{
+        letter-spacing: 10px;   
+    }
+    .subhead{
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    #logotop{
+       display: none;
+    }
+    h2{
+        font-size: 3em;  
+    }
+    .subhead{
+        font-size: 1.8em;
+    }
+    blockquote{
+        font-size: 1.4em;
+    }
+    .tomatos{
+        width: 300px;
+    }
+    h2 img{
+        width: 60px;
+    }
+    .hide-desktop{
+        display: none;
+    }
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    .gray-container ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        text-align: center;
+        grid-gap: 1em;
+        }
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+    nav ul li{
+        float:left;
+    }
+    nav ul li a{
+        color: #ffffff;
+        font-size: 20px;
+        background: inherit; 
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        
+
+    }
+    nav ul li a:hover{
+        background-color: inherit; /*naslijedi boju tj. ujedini se transparent.*/
+    }
+    .hide-on-mobile{
+        display: block;
+    }
+    #bestid{
+        font-size: 6em;
+    }
+    #bestid img{
+        width: 15%;
+    }
+    .show-on-mobile{
+        display: none;
+    }
+    .footer-container div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        text-align: center;
+        grid-gap: 1em;
+        }
+    .footer-container div img{
+            width: 10%;
+        }
+    .hide-on-mobile{
+            padding: auto;
+        }
+}
+@media only screen and (min-width:1600px){
+    .gray-container ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    grid-gap: 1em;
+    }
+    nav ul li a{
+        font-size: 2em; 
+    }
+    .subhead{
+        font-size: 2em;
+    }
+    .tomatos{
+        width: 500px;
+    }
+    .footer-container div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+    grid-gap: 1em;
+    }
+    .footer-container div img{
+        width: 10%;
+    }
+    .hide-on-mobile{
+        padding: auto;
+    }
+}

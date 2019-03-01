@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boxstyle.css">
+    <title>Tomat</title>
+</head>
+
+<body>
+    <img src="images/background1.jpg" alt="background img" id="background">
+    <div id="container">
+        <header>
+            <img src="images/tomato.png" alt="tomat" id="logotop">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#typav">products</a></li>
+                    <li><a href="#">about</a></li>
+                    <li onclick="openForm()"><a href="#openformcontact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2 class="show-on-mobile">Bästa tomat i <img src="images/finland.png" alt="Finland"></h2>
+            <h2 id="bestid" class="hide-on-mobile">Bästa <img src="images/tomato.png" alt="" id="tomato5"> i <img
+                    src="images/finland.png" alt="Finland"></h2>
+            <p class="subhead">Prisbelönt tomat i tre år <br><span id="winy">(1998, 2005, 2006)</span></p>
+        </section>
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <h1 id="typav">Typ av tomater:</h1>
+            <hr>
+            <ul>
+                <li>
+
+                    <figure>
+                        <img src="images/tomato3.jpg" alt="tomato1" class="tomatos">
+                        <h5 id="tomatoh5">Tomato</h5>
+                        <blockquote>Tomaten härstammar från Peru i Sydamerika och nyttjades av Inkafolket. Ordet tomat
+                            kommer av det aztekiska språket nahuatls tōmatl, och det finns belägg för att tomat har
+                            odlats i Mexiko sedan år 700 f.Kr. Till Norden kom tomaten på 1600-talet, men det var först
+                            mot slutet av 1700-talet som den blev allmänt känd.</blockquote>
+
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/tomato4.jpg" alt="tomato1" class="tomatos">
+                        <h5>Marlise</h5>
+                        <blockquote>Tomaten härstammar från Peru i Sydamerika och nyttjades av Inkafolket. Ordet tomat
+                            kommer av det aztekiska språket nahuatls tōmatl, och det finns belägg för att tomat har
+                            odlats i Mexiko sedan år 700 f.Kr. Till Norden kom tomaten på 1600-talet, men det var först
+                            mot slutet av 1700-talet som den blev allmänt känd.</blockquote>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure>
+                        <img src="images/tomato5.jpg" alt="tomato1" class="tomatos">
+                        <h5>Big Hart Tomat</h5>
+                        <blockquote>Tomaten härstammar från Peru i Sydamerika och nyttjades av Inkafolket. Ordet tomat
+                            kommer av det aztekiska språket nahuatls tōmatl, och det finns belägg för att tomat har
+                            odlats i Mexiko sedan år 700 f.Kr. Till Norden kom tomaten på 1600-talet, men det var först
+                            mot slutet av 1700-talet som den blev allmänt känd.</blockquote>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button id="openformcontact" class="open-button" onclick="openForm()">Fyll i din ansökan idag</button>
+    <h2 id="h2">Vill du arbeta för oss ?</h2>
+    <div class="containerform">
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Förnamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Efternamn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Land</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="Finland">Finland</option>
+                            <option value="Sverige">Sverige</option>
+                            <option value="andra">Andra</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Ämne</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Skriva något.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Lämna in">
+                    <button type="button" class="btn cancel" onclick="closeForm()">Stänga</button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#"><img src="images/tomato.png" alt="logo"></a>
+                <p class="addres">Malax Långgatan 1D, 66100 <br>Finland</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+
+        var menu = document.getElementById("menu");
+        var nav = document.getElementById("nav");
+        var exit = document.getElementById("exit");
+
+        menu.addEventListener("click", function (e) {
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+        });
+
+        exit.addEventListener("click", function (e) {
+            nav.classList.add("hide-mobile");
+            e.preventDefault();
+        });
+
+
+
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
